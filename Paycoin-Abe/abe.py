@@ -41,14 +41,14 @@ __version__ = version.__version__
 
 ABE_APPNAME = "PPC Abe"
 ABE_VERSION = __version__
-ABE_URL = 'https://github.com/MatthewLM/PeercoinAbeExplorer'
+ABE_URL = 'https://github.com/ligerzero459/PaycoinAbeExplorer'
 
 COPYRIGHT_YEARS = '2011'
 COPYRIGHT = "Abe developers"
 COPYRIGHT_URL = 'https://github.com/bitcoin-abe'
 
-DONATIONS_BTC = '1KXgUvqsXgcJFrZDGjogpVDkqoiTj3EpTF'
-DONATIONS_PPC = 'PPfGPJ7LDyJnP81vqLAdsZsdp7engHYxix'
+DONATIONS_BTC = '1CQVjbXWVPsseb1GNgNMw3rWNW2nzDd72V'
+DONATIONS_XPY = 'PSdP9ecHQFLWaMb83G1pAcYFtgAuWUppUr'
 
 TIME1970 = time.strptime('1970-01-01','%Y-%m-%d')
 EPOCH1970 = calendar.timegm(TIME1970)
@@ -82,7 +82,7 @@ DEFAULT_TEMPLATE = """
                 </span>
                 %(download)s
                 Tips appreciated!
-                <a href="http://peercoinexplorer.info/address/%(DONATIONS_PPC)s">PPC</a> 
+                <a href="https://ledger.paycoin.com/address/%(DONATIONS_XPY)s">XPY</a> 
                 <a href="http://blockchain.info/address/%(DONATIONS_BTC)s">BTC</a>
             </p>
         </div>
@@ -2337,7 +2337,7 @@ def main(argv):
             "COPYRIGHT_YEARS": COPYRIGHT_YEARS,
             "COPYRIGHT_URL": COPYRIGHT_URL,
             "DONATIONS_BTC": DONATIONS_BTC,
-            "DONATIONS_PPC": DONATIONS_PPC,
+            "DONATIONS_XPY": DONATIONS_XPY,
             "CONTENT_TYPE": DEFAULT_CONTENT_TYPE,
             "HOMEPAGE": DEFAULT_HOMEPAGE,
             },
