@@ -10,7 +10,7 @@ setup(
     package_data = {'Paycoin-Abe': ['htdocs/*']},
     author       = "John Tobey",
     author_email = "jtobey@john-edwin-tobey.org",
-    url          = "https://github.com/MatthewLM/peercoinj",
+    url          = "https://github.com/PaycoinFoundation/PaycoinAbeExplorer",
     classifiers=[
         'Development Status :: 4 - Beta',
         'Environment :: Console',
