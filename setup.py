@@ -1,16 +1,16 @@
 from distutils.core import setup
 
-execfile("Peercoin-Abe/version.py")
+execfile("Paycoin-Abe/version.py")
 
 setup(
-    name         = "Peercoin-Abe",
+    name         = "Paycoin-Abe",
     version      = __version__,
     requires     = ['Crypto.Hash'],
-    packages     = ["Peercoin-Abe"],
-    package_data = {'Peercoin-Abe': ['htdocs/*']},
+    packages     = ["Paycoin-Abe"],
+    package_data = {'Paycoin-Abe': ['htdocs/*']},
     author       = "John Tobey",
     author_email = "jtobey@john-edwin-tobey.org",
-    url          = "https://github.com/MatthewLM/peercoinj",
+    url          = "https://github.com/PaycoinFoundation/PaycoinAbeExplorer",
     classifiers=[
         'Development Status :: 4 - Beta',
         'Environment :: Console',
@@ -33,7 +33,7 @@ setup(
         #'Topic :: Software Development :: Libraries :: Python Modules',
     ],
     description  = "Abe: a free block chain browser for Bitcoin-based currencies.",
-    long_description = """Abe reads the Bitcoin block chain from disk, loads
+    long_description = """Abe reads the block chain from disk, loads
 it into a database, indexes it, and provides a web interface to search
 and navigate it.  Abe works with several Bitcoin-derived currencies,
 including Namecoin and LiteCoin.

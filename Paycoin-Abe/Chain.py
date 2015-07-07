@@ -27,6 +27,8 @@ def create(policy, **kwargs):
         return Peercoin(**kwargs)
     if policy == "NovaCoin":
         return NovaCoin(**kwargs)
+    if policy == "Paycoin":
+        return Paycoin(**kwargs)
     return Sha256NmcAuxPowChain(**kwargs)
 
 class Chain(object):
@@ -169,3 +171,17 @@ class Peercoin(Sha256Chain, PpcPosChain):
     datadir_conf_file_name = "ppcoin.conf"
     datadir_rpcport = 9902
 
+class Paycoin(Sha256Chain, PpcPosChain):
+    def __init__(chain, **kwargs):
+        chain.name = 'Paycoin'
+        chain.code3 = 'XPY'
+        chain.address_version = "\x85"
+        chain.magic = "\xaa\xaa\xaa\xaa"
+        chain.decimals = 6
+        Chain.__init__(chain, **kwargs)
+
+    def has_feature(chain, feature):
+        return feature == 'nvc_proof_of_stake'
+
+    datadir_conf_file_name = "paycoin.conf"
+    datadir_rpcport = 9902
