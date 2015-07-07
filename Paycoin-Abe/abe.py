@@ -41,7 +41,7 @@ __version__ = version.__version__
 
 ABE_APPNAME = "PPC Abe"
 ABE_VERSION = __version__
-ABE_URL = 'https://github.com/ligerzero459/PaycoinAbeExplorer'
+ABE_URL = 'https://github.com/PaycoinFoundation/PaycoinAbeExplorer'
 
 COPYRIGHT_YEARS = '2011'
 COPYRIGHT = "Abe developers"
